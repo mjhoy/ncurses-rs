@@ -9,6 +9,7 @@ repository = "https://github.com/jeaye/ncurses-rs"
 readme = "README.md"
 keywords = ["ncurses","TUI"]
 license = "MIT"
+build = "build.rs"
 
 [dependencies]
 libc = "0.2"
