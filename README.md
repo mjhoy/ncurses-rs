@@ -1,16 +1,21 @@
-ncurses-rs [![Build Status](https://travis-ci.org/jeaye/ncurses-rs.png)](https://travis-ci.org/jeaye/ncurses-rs)
+ncurses-static-rs
 ==========
 
 This is a very thin wrapper around the ncurses TUI lib.
 
+It is a fork of [ncurses-rs](https://github.com/jeaye/ncurses-rs) that
+statically links to `ncurses`.
+
 ## Building
+
 The compiled library will go to the `target` directory.
+
 ```
 cargo build
 ```
 
-Note that you must to have the ncurses library installed and linkable for ncurses-rs to work. On Linux, this should be trivial. On OS X, consider installing ncurses using Homebrew. (Note that you have to force Homebrew to link the library to `/usr/local/lib`: `brew link --force ncurses` and set that path to
-`LIBRARY_PATH` environmental variable.)
+This also downloads and builds `ncurses`. It may take a minute or
+two. (See the included git submodule for what gets built.)
 
 ## Examples
 
