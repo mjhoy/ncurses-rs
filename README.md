@@ -6,6 +6,15 @@ This is a very thin wrapper around the ncurses TUI lib.
 It is a fork of [ncurses-rs](https://github.com/jeaye/ncurses-rs) that
 statically links to `ncurses`.
 
+To add as a dependency to your project, use the following in your
+`Cargo.toml`:
+
+```toml
+[dependencies.ncurses]
+git = "https://github.com/mjhoy/ncurses-static-rs"
+features = ["wide"]
+```
+
 ## Building
 
 The compiled library will go to the `target` directory.
